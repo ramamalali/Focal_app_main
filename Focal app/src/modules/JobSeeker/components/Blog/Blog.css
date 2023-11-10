@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: var( --font-family);}
+
+.blog{ display: flex; 
+    flex-direction:  column; 
+    justify-content: center !important; 
+    align-items: center !important;}
+
+.blog h1{font-weight: 700;
+margin-top: 7rem;
+margin-bottom: 1.12rem;
+
+}
+
+.blog p{text-align: center; }
