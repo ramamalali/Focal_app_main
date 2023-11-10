@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import SkillsList from "../../../Focal_app_main/Focal app/src/modules/JobSeeker/components/SkillsList/SkillsList"
-import Experience from "../../../Focal_app_main/Focal app/src/modules/JobSeeker/components/Experience/Experience"
-import LanguagesList from "../../../Focal_app_main/Focal app/src/modules/JobSeeker/components/LanguagesList/LanguagesList"
+// import SkillsList from "../../../Focal_app_main/Focal app/src/modules/JobSeeker/components/SkillsList/SkillsList"
+// import Experience from "../../../Focal_app_main/Focal app/src/modules/JobSeeker/components/Experience/Experience"
+// import LanguagesList from "../../../Focal_app_main/Focal app/src/modules/JobSeeker/components/LanguagesList/LanguagesList"
 
 function App() {
   return (
@@ -23,9 +23,9 @@ function App() {
     //   </header>
     // </div>
     <>
-        <SkillsList />
+        {/* <SkillsList />
        <Experience />
-       <LanguagesList/>
+       <LanguagesList/> */}
     </>
 
     
