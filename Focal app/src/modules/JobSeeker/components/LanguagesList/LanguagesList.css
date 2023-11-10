@@ -1,0 +1,65 @@
+.KO-skills-list{
+    display: flex;
+    align-items: center;
+   
+}
+.KO-Add-Items1{
+    display: flex;
+    align-items: center;
+    margin: 10px ;
+}
+.KO-Add-Items2{
+    display: flex;
+    align-items: center;
+    margin: 10px ;
+}
+@media (max-width:1050px){
+    .KO-Add-Items1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+}
+@media (max-width:1366px){
+    .KO-Add-Items2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+}
+@media (max-width:400px){
+    .KO-skills-list{
+        flex-direction: column;
+    }
+}
+.star-ratings{
+    width: 185px;
+}
+.star-ratings .widget-svg{
+    width: 25px !important;
+}
+.KO-main-button2{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--clr-main);
+    font-size: 28px;
+    cursor: pointer;
+}
+.KO-skillslist{
+    background-color: white;
+    
+   /*  max-width: 450px !important; */
+    padding: 20px;
+    border-radius: 20px;
+}
+.KO-value4{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    padding:3px  ;
+    max-height: 20px;
+    width: 100px;
+}
