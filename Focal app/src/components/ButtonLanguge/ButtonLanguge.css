@@ -1,0 +1,39 @@
+.rn-group-languge button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    margin: 1rem 1.5rem 0.5rem 0;
+    font-family: var(--font-family);
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-style: normal;
+}
+
+.rn-arabic-btn::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 17px;
+    background-color: var(--clr-main);
+    left: 30px;
+    margin: 0 5px;
+}
+
+.rn-group-languge .rn-arabic-btn {
+    color: #938C8C;
+    margin-right: 10px;
+
+}
+
+.rn-group-languge .rn-english-btn {
+    color: var(--clr-main);
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width:1111px) {
+    .rn-group-languge button {
+        margin-right: 1rem;
+    }
+}
