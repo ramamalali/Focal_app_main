@@ -18,12 +18,11 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: left;
-
+    gap: 2rem;
 }
 
 .HD_footer-div{
     width: 150px;
-    margin: 1rem;
     display: flex;
     justify-content: flex-start;
     flex-direction: column; 
