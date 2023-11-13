@@ -1,7 +1,7 @@
 
 import './Sidebar.css'
-import camera from './../../imgs/camera.png'
-import { Link, NavLink } from "react-router-dom";
+import camera from '../../asset/imgs/camera.png'
+// import { Link, NavLink } from "react-router-dom";
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -41,34 +41,46 @@ const Sidebar = () => {
         {/* ----------------------------------------- */}
         <div className="br-AsLinkss">
           <div className='br-Aslink1'>
-            <Link className='br-Aslink11'>INFORMATION  </Link>
+            {/* <Link className='br-Aslink11'>INFORMATION  </Link> */}
+            <a className='br-Aslink11'>INFORMATION  </a>
           </div>
 
           <div className='br-Aslink1'>
             
-          <NavLink  id="br-Aslink10"
+          {/* <NavLink  id="br-Aslink10"
            to="/messages" 
             className= {({ isActive, isPending }) =>
           isPending ? "pending" : isActive ? "active" : ""
           }
          >
         RESUMS
-        </NavLink> 
+        </NavLink>  */}
+        <a  id="br-Aslink10"
+           to="/messages" 
+            className= {({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+          }
+         >
+        RESUMS
+        </a>
       </div>
         
             
          
           <div className='br-Aslink1'>
-            <Link className='br-Aslink11'>BLOGS  </Link>
+            {/* <Link className='br-Aslink11'>BLOGS  </Link> */}
+            <a className='br-Aslink11'>BLOGS  </a>
           </div>
         </div>
         <hr className='br-Ashorizontal2' />
 
         <div className="br-Aslogout">
-          <Link className='br-Aslink13'> log out  </Link>
+          {/* <Link className='br-Aslink13'> log out  </Link> */}
+          <a className='br-Aslink13'> log out  </a>
         </div>
         <div className="br-AsTerms">
-          <Link className='br-Aslink14'>Terms and Conditions </Link>
+          {/* <Link className='br-Aslink14'>Terms and Conditions </Link> */}
+          <a className='br-Aslink14'>Terms and Conditions </a>
         </div>
 
       </div>

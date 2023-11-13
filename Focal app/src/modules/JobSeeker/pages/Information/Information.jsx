@@ -1,8 +1,8 @@
 
-import './BlogPageStyle.css'
-import { Col, Row } from "react-bootstrap"
-import background from "./../../imgs/bg.png";
-import Sidebar from '../../Components/Sidebar/Sidebar'
+import './Information.css'
+import { Col, Row } from "react-bootstrap";
+import background from "../../asset/imgs/bg.png";
+import Sidebar from '../../components/Sidebar/Sidebar';
 /* import AllComponets from '../Components/AllComponets/AllComponets'; */
 
 const BlogPage = () => {

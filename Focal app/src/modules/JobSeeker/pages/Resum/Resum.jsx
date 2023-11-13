@@ -1,9 +1,10 @@
 
 import './Resum.css'
-import { Col, Row } from "react-bootstrap"
-import background from "./../../imgs/bg.png";
-import Sidebar from '../../Components/Sidebar/Sidebar'
-/* import AllComponets from '../../Components/AllComponets/AllComponets'; */
+import { Col, Row } from "react-bootstrap";
+import background from "../../asset/imgs/bg.png";
+import Sidebar from '../../components/Sidebar/Sidebar';
+
+ import AllComponets from '../../components/AllComponets/AllComponets'; 
 const Resum = () => {
 
   return (
@@ -16,7 +17,7 @@ const Resum = () => {
    {/* ------------------------------------ */}
      <Col  lg={8} md={8}   sm={10}className="br-As-col2" >  
 
-{/*   <AllComponets /> */}
+  <AllComponets />
      
          
           </Col>
