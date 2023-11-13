@@ -65,7 +65,7 @@
     word-wrap: break-word;
     width: 379px;
     position: relative;
-    bottom: 1px;
+    bottom: 12px;
 }
 .endp{
     position: relative;
@@ -80,7 +80,6 @@
     margin-right: auto;
     margin-right: auto;
     background-color: var(--clr-white);
-
 }
 .HD_footer-below{
     display: flex;
