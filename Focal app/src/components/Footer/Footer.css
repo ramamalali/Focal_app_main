@@ -84,7 +84,7 @@
 }
 .HD_footer-below{
     display: flex;
-    padding: 1rem 10rem;
+    padding: 1rem 7.5rem;
     gap: 1rem;
 }
 @media screen and (max-width: 850px){
