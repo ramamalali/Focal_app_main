@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './FormLoginStyle.css'
 import { RiEyeLine } from "react-icons/ri";
-import google from './../../assets/google.png' ;
+import google from './../../../assets/google.png' ;
 
 
 export default function FormLogin() {

@@ -3,14 +3,14 @@ import './Resum.css'
 import { Col, Row } from "react-bootstrap";
 import background from "../../asset/imgs/bg.png";
 import Sidebar from '../../components/Sidebar/Sidebar';
-
+import Footer from "../../../../components/Footer/Footer"
  import AllComponets from '../../components/AllComponets/AllComponets'; 
 const Resum = () => {
 
   return (
     <div className="br-main-pag" style={{backgroundImage: `url(${background})` }}>
 {/* ------------------------------------ */}
-       <Row className='pt-5 br-As-Row w-100' >
+       <Row className='pt-5 br-As-Row w-100'   style={{marginBottom: "64px" }}>
         <Col lg={4}  md={2}  sm={1} className="br-As-col">
           <Sidebar />
         </Col>
@@ -23,7 +23,7 @@ const Resum = () => {
           </Col>
     </Row>
   
-   
+   <Footer/>
  </div>
   )
 }

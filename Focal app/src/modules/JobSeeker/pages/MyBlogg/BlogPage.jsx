@@ -4,6 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import background from "../../asset/imgs/bg.png";
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Blog2 from '../../components/Myblog/Blog2/Blog2'
+import Footer from '../../../../components/Footer/Footer';
 const BlogPage = () => {
 
   return (
@@ -11,7 +12,7 @@ const BlogPage = () => {
     /* -------------------main page------------------- */
     <div className="br-main-pag" style={{backgroundImage: `url(${background})` }}>
 
-       <Row className='pt-5 br-As-Row w-100' >
+       <Row className='pt-5 br-As-Row w-100' style={{marginBottom: "64px" }} >
         <Col lg={4}  md={2}  sm={1} className="br-As-col">
           <Sidebar />
         </Col>
@@ -25,7 +26,7 @@ const BlogPage = () => {
           </Col>
     </Row>
   
-   
+    <Footer/>
  </div>
   )
 }
