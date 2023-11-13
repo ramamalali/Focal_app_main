@@ -3,6 +3,7 @@ import './BlogPageStyle.css'
 import { Col, Row } from "react-bootstrap";
 import background from "../../asset/imgs/bg.png";
 import Sidebar from '../../components/Sidebar/Sidebar';
+import Blog2 from '../../components/Myblog/Blog2/Blog2'
 const BlogPage = () => {
 
   return (
@@ -20,7 +21,7 @@ const BlogPage = () => {
 
        
         {/*   <Blog /> */}
-         {/* <Blog2 /> */}
+         <Blog2 />
           </Col>
     </Row>
   

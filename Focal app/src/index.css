@@ -1,3 +1,45 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Inter:wght@100;300;500;700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+ /* font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;*/
+
+
+:root { 
+  /* colors */ 
+  --clr-main:                      #ff8500; 
+  --clr-white:                     #FFFFFF; 
+  --clr-black:                     #000; 
+  --clr-disable:                   #93bcbc; 
+  --clr-succsess:                  #71aa27; 
+  --clr-danger:                    #c61414; 
+  --clr-secondary-black:           #282828; 
+  --clr-brightness-pink:           rgba(255, 133, 0 , 0.2); 
+  --clr-brightness-blue:           #1d5edd; 
+ 
+   
+  /* font family */ 
+  --font-family: "Montserrat"; 
+ 
+  /* font size */ 
+  --fs-larger: 64px; 
+  --fs-large: 32px; 
+  --fs-medium: 16px; 
+  --fs-small: 12px; 
+  --fs-smaller: 8px; 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,30 +54,5 @@ code {
     monospace;
 }
 
-
-:root {
-  /* colors */
-  --clr-main:                      #ff8500;
-  --clr-white:                     #FFFFFF;
-  --clr-black:                     #000;
-  --clr-disable:                   #93bcbc;
-  --clr-succsess:                  #71aa27;
-  --clr-danger:                    #c61414;
-  --clr-secondary-black:           #282828;
-  --clr-brightness-pink:           rgba(255, 133, 0 , 0.2);
-  --clr-brightness-blue:           #1d5edd;
-
-  
-  /* font family */
-  --font-family: "Montserrat";
-
-  /* font size */
-  --fs-larger: 64px;
-  --fs-large: 32px;
-  --fs-medium: 16px;
-  --fs-small: 12px;
-  --fs-smaller: 8px;
-
-}
 
 
