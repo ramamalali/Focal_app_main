@@ -1,15 +1,18 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .HD_section-JobLogin{
-    background-image: url('./../../assets/img-login.png');
+    background-image: url('./../../assets//img-login.png');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* style all paragraphs */
@@ -103,24 +106,7 @@
 }
 /*End boxTwo style */
 
-.HD_boxTwo .p span{
-    color: #222222;
-    font-size: 16px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-    padding-top: 19px;
-}
-.HD_boxTwo .p {
-    color: #938C8C;
-    font-size: 16px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-    padding-top: 19px;
-}
+
 
 
 
@@ -147,6 +133,7 @@
 
 
 
+
 @media screen and  (min-width: 501px) and (max-width: 600px){
     .HD_boxTitlle{
         padding-top: 20%;
@@ -170,5 +157,3 @@
         padding-top: 20px;
     }
 }
-
-

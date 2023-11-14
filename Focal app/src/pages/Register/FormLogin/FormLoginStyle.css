@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* form format */
 .HD_ContainerLogin{
     position: relative;
@@ -14,8 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30%;
-    margin-top: 3%;
+    margin-top: 2rem;
     background-color: var(--clr-white);
     box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
 }
@@ -36,6 +37,9 @@
     margin: 90px 0;
     border-bottom: 2px solid rgba(128, 128, 128, 0.693);
     margin-top: 10px;
+}
+ .p{
+   margin-bottom: 0;
 }
 .inputBox .icon{
     position: absolute;
@@ -161,8 +165,7 @@
     .HD_ContainerLogin{
         width: 600px;
         margin-top:2%;
-        margin-left: 20%;
-        overflow: hidden;
+    
         
     }
 }
@@ -173,8 +176,7 @@
     .HD_ContainerLogin{
         width: 400px;
         margin-top:2%;
-        margin-left: 25%;
-        overflow: hidden;
+
         
     }
 }
@@ -183,8 +185,7 @@
     .HD_ContainerLogin{
         width: 400px;
         margin-top:2%;
-        margin-left: 20%;
-        overflow: hidden;
+
         
     }
     
@@ -193,9 +194,9 @@
 @media screen and (min-width: 600px) and (max-width: 650px) {
 
     .HD_ContainerLogin{
-        width: 400px;
+        width: 90%;
         margin-top:2%;
-        margin-left: 18%;
+
     }
     
 }
@@ -203,24 +204,24 @@
 
 @media screen and  (min-width: 501px) and (max-width: 600px){
     .HD_ContainerLogin{
-        width: 300px;
-        margin-left: 25%;
-        margin-top: 10%;
+        width: 90%;
+       
+
     }
 
     .HD_forget{
         position: relative;
-        top: 5px;
-        left: 65px;
+        top: -1px;
+        left: -10px;
         font-weight: 100;
         font-size: smaller;
         font-family: var(--font-family);
     }
     .inputBox{
-        width: 250px;
+        width: 90%;
     }
     .HD_forget label{
-        left: 80px;
+        left: 20%;
     }
 }
 
@@ -230,24 +231,23 @@
 
 @media screen and (max-width: 500px){
     .HD_ContainerLogin{
-        width: 300px;
-        margin-left: 18%;
+        width: 90%;
         margin-top: 10%;
     }
 
     .HD_forget{
         position: relative;
-        top: 5px;
+        top: 2px;
         left: 65px;
         font-weight: 100;
         font-size: smaller;
         font-family: var(--font-family);
     }
     .inputBox{
-        width: 250px;
+        width: 90%;
     }
     .HD_forget label{
-        left: 80px;
+        left: -17%;
     }
 }
 

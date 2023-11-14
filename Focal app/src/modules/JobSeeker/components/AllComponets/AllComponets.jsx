@@ -2,6 +2,9 @@
 import Content from '../ContReusem/Content'
 import { Col, Row } from 'react-bootstrap'
 import './AllComponets.css'
+import Experience from '../Experience/Experience'
+import SkillsList from '../SkillsList/SkillsList'
+import LanguagesList from '../LanguagesList/LanguagesList'
 const AllComponets = () => {
   return (
    <>
@@ -17,14 +20,14 @@ const AllComponets = () => {
         <Row>
        <Col  col={12}  className="mb-3 br-As">
         <Row>
-         {/* expirents */}
+        <Experience/>
         </Row>
           </Col>
        </Row>
        <Row>
-   {/* skills and languaes */}
-   <Col lg={6} md={12} className="mb-3">  </Col>
-   <Col  lg={6} md={12} className="mb-3"> </Col>
+  
+   <Col lg={6} md={12} className="mb-3"> <SkillsList/>  </Col>
+   <Col  lg={6} md={12} className="mb-3"> <LanguagesList/> </Col>
 </Row>
        </div>
         </>   

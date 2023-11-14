@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* style all paragraphs */
