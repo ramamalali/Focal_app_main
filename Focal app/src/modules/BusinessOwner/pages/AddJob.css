@@ -1,0 +1,318 @@
+.Ah-add-jobs {
+    background-image: url('../images/background-login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*overflow-y: auto;*/
+    padding-top: 7rem !important;
+    height: max-content;
+}
+
+.Ah-title-page {
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Ah-title-page h1 {
+    font-size: var(--fs-medium-title);
+    font-weight: 700;
+    width: 100%;
+
+}
+
+.Ah-title-page p {
+    font-size: var(--fs-medium-text);
+    font-weight: 500;
+}
+
+.Ah-title {
+    font-family: var(--font-family);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.posted {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+button.posted-button {
+    margin: 0 auto;
+    width: 240px;
+    height: 48px;
+    background-color: #282828;
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+.Ah-container,
+.SM-container {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Ah-container-white,
+.SM-container-white {
+    width: 70%;
+    background-color: white;
+    padding: 50px 40px;
+    font-family: Montserrat;
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+    border-radius: 1.875rem;
+
+}
+
+.Ah-title h1,
+.SM-title h1 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+
+}
+
+.Ah-title p {
+    text-align: left !important;
+}
+
+.Ah-AddJob-input {
+    width: 90% !important;
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: none;
+    text-align: center;
+}
+
+.star {
+    margin-top: 20px;
+    width: max-content;
+    position: relative;
+}
+
+#jobtitle {
+    text-align: left !important;
+}
+
+.SM-Address {
+    width: 95% !important;
+    text-align: start !important;
+}
+
+.SM-paragraph p {
+    color: var(--clr-black);
+    width: 95% !important;
+    font-family: var(--font-family);
+    font-size: var(--fs-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 36px;
+}
+
+.SM-Text {
+    color: var(--focal-x-disable, #938C8C);
+    font-family: var(--font-family);
+    font-size: var(--fs-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 18px;
+}
+
+.OS-AddJob-h6 {
+    color: #000;
+    font-family: var(--clr-black);
+    font-size: var(--fs-meduim);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left !important;
+    top: 26px;
+}
+
+.star::after {
+    content: '*';
+    font-size: var(--fs-large-title);
+    color: var(--clr-main);
+    position: absolute;
+    top: -10px;
+    right: -15px;
+
+}
+
+.OS-AddJob-Select {
+    width: 90% !important;
+    border: 0;
+    border-bottom: 2px solid var(--clr-black);
+    outline: none;
+}
+
+#Experince::placeholder {
+    text-align: center;
+}
+
+#Experince {
+    text-align: center;
+}
+
+button.op-plus {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 30px !important;
+    position: absolute;
+    top: -10px;
+}
+
+button.op-minus {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 30px !important;
+    position: absolute;
+    top: -10px;
+    right: 10%;
+
+}
+
+button.Ah-Send-button {
+    width: 200px;
+    height: 50px;
+    color: var(--clr-black);
+    font-family: var(--font-family);
+    font-size: var(--fs-medium-text);
+    font-weight: 700;
+    background: none;
+    border: 2px solid var(--clr-black);
+}
+
+#root>div>div>div:nth-child(4)>div>div>div:nth-child(2)>div>div>div.jodit-workplace>div.jodit-wysiwyg {
+    height: 180px !important;
+    background-color: #938C8C !important;
+}
+
+@media only screen and (min-width:1600px) {
+    .Ah-title-page h1 {
+        font-size: var(--fs-large);
+    }
+
+    .Ah-title-page p {
+        font-size: var(--fs-large-title);
+    }
+
+    .Ah-container-white,
+    .SM-container-white {
+        width: 80%;
+        margin: 100px auto;
+        font-size: var(--fs-large-text);
+    }
+
+    .star {
+        font-size: var(--fs-large-text);
+    }
+
+    .Ah-AddJob-input {
+        font-size: var(--fs-medium-title);
+    }
+
+    .Ah-title h1 {
+        font-size: var(--fs-large-title);
+    }
+
+    .Ah-title p {
+        font-size: var(--fs-large-text);
+    }
+
+    .Ah-text {
+        font-size: var(--fs-large-text);
+    }
+
+    .SM-paragraph p {
+        font-size: var(--fs-medium-text);
+    }
+
+    .radio-buttons-container {
+        font-size: var(--fs-medium-text);
+    }
+
+    .SM-Text {
+        font-size: var(--fs-medium-text);
+    }
+
+    .Ah-Send-button {
+        width: 300px;
+        height: 80px;
+        font-size: var(--fs-medium-title);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Ah-add-job {
+        min-width: 270px;
+        padding: 15px;
+    }
+
+    .Ah-title h1 {
+        font-size: var(--fs-medium-text);
+        font-weight: 700;
+        width: 100%;
+
+    }
+
+    .Ah-title p {
+        text-align: center;
+        font-size: var(--fs-meduim);
+        font-weight: 500;
+        width: 250px;
+    }
+
+    #root>div>div>div.Ah-title.text-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    .Ah-container,
+    .SM-container {
+        margin: 20px auto;
+    }
+
+    .Ah-container-white,
+    .SM-container-white {
+        width: 90%;
+        height: max-content;
+        padding: 40px 30px;
+
+    }
+
+    .star {
+        font-size: var(--fs-medium-lg);
+    }
+
+    .Ah-AddJob-input {
+        font-size: var(--fs-meduim);
+    }
+
+    button.Ah-Send-button {
+        position: relative;
+        left: 12%;
+    }
+  
+
+}
