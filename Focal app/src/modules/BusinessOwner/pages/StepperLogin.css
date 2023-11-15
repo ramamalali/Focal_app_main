@@ -1,0 +1,274 @@
+.Ah-StepperLogin {
+    background-image: url('../images/background-login.png') !important;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-color: lightgray 50%;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+}
+
+.Ah-StepperLogin > div:nth-child(1) {
+    display: table !important;
+    width: 70% !important;
+    margin: 7rem auto 5rem auto;
+}
+
+
+button.nb-buttons1 {
+    border: none;
+    background-color: transparent !important;
+    color: var(--clr-main);
+    font-size: 22px;
+    position: relative;
+    left: 65vw;
+}
+
+button.nb-buttons1::before {
+    content: '<< ';
+    color: var(--clr-main);
+}
+
+button.nb-buttons2 {
+    border: none;
+    background-color: transparent !important;
+    color: var(--clr-main);
+    font-size: var(--fs-medium-title);
+    position: relative;
+    left: 70vw;
+    padding-bottom: 2rem !important;
+
+}
+
+button.nb-buttons2::after {
+    content: ' >>';
+    color: var(--clr-main);
+}
+
+button.nb-buttons3 {
+    border: none;
+    background-color: transparent !important;
+    color: var(--clr-main);
+    font-size: var(--fs-medium-title);
+    position: relative;
+    left: 70vw;
+}
+
+.Ah-container {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Ah-container-white {
+    width: 70%;
+    background-color: var(--clr-white);
+    padding: 50px 40px;
+    font-family: Montserrat;
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+    border-radius: 0.625rem;
+}
+
+.Ah-titles {
+    font-size: var(--fs-medium-title);
+    font-weight: 700;
+    width: 100%;
+
+}
+
+.Ah-inputs {
+    width: 90% !important;
+    border: 0;
+    border-bottom: 2px solid var(--clr-black);
+    outline: none !important;
+}
+
+.star {
+    width: max-content;
+    position: relative;
+}
+
+#demo-simple-select-standard-label {
+    font-family: var(--font-family) !important;
+    width: max-content;
+    position: relative;
+    padding: 0;
+}
+
+#demo-simple-select-standard {
+    color: var(--clr-black) !important;
+    margin: 0 !important;
+}
+
+.ah-form {
+    height: 13px !important;
+}
+
+.star::after {
+    content: '*';
+    font-size: var(--fs-medium-text);
+    color: var(--clr-main);
+    position: absolute;
+    top: -10px;
+    right: -15px;
+
+}
+
+#city {
+    width: 90% !important;
+    border: 0;
+    border-bottom: 2px solid var(--clr-black);
+    outline: none;
+}
+
+.Ah-hidden-input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.Ah-custom-input {
+    border: none;
+    outline: none;
+    font-size: var(--fs-small);
+    padding: 5px;
+    width: 90%;
+    border-bottom: 2px solid var(--clr-black);
+    transition: 0.3s ease;
+    background: url('../images/icon.jpg') no-repeat right center;
+    background-size: 20px 20px;
+    
+}
+
+.Ah-text {
+    font-family: var(--font-family);
+    font-size: var(--fs-medium-text);
+    font-weight: 400;
+}
+/*
+.Ah-StepperLogin > div:nth-child(2) > div > div:nth-child(4) > div:nth-child(1) > a , span,
+.Ah-StepperLogin > div:nth-child(2) > div > div:nth-child(3) > div:nth-child(1) > a, span ,
+.Ah-StepperLogin  > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) > a , span,
+.Ah-StepperLogin > div:nth-child(2) > div > div:nth-child(1) > div:nth-child(1) > a , span
+{
+    display: none;
+}
+*/
+@media only screen and (min-width:1600px) {
+
+    button.nb-buttons1,
+    button.nb-buttons2,
+    button.nb-buttons3 {
+        font-size: var(--fs-large-title);
+    }
+
+    .Ah-container {
+        margin: 0 auto !important;
+    }
+
+    .Ah-container-white {
+        width: 80%;
+        margin: 100px auto;
+        font-size: var(--fs-large-text);
+    }
+
+    .star {
+        font-size: var(--fs-large-text);
+    }
+
+    .Ah-inputs {
+        font-size: var(--fs-medium-title);
+    }
+
+    .Ah-title {
+        font-size: var(--fs-large-title);
+    }
+
+    .Ah-text {
+        font-size: var(--fs-large-text);
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .Ah-StepperLogin {
+        padding: 0 !important;
+    }
+
+    button.nb-buttons1,
+    button.nb-buttons3 {
+        font-size: var(--fs-small);
+        left: 25vw;
+        padding-bottom: 2rem !important;
+    }
+
+    button.nb-buttons2 {
+        font-size: var(--fs-small);
+        left: 28vw;
+    }
+
+    .Ah-container {
+        margin: 20px auto;
+    }
+
+    .Ah-container-white {
+        width: 90%;
+        font-size: var(--fs-small);
+        height: max-content;
+        padding: 40px 30px;
+    }
+
+    .Ah-inputs {
+        font-size: var(--fs-small);
+    }
+
+    .Ah-title {
+        font-size: var(--fs-small) !important;
+
+    }
+
+    .Ah-text {
+        font-size: var(--fs-small);
+    }
+
+    /*this selector for the stepper circles
+    note i can not  */
+
+    .Ah-StepperLogin>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
+    .Ah-StepperLogin>div:nth-child(1)>div:nth-child(2)>div:nth-child(1),
+    .Ah-StepperLogin>div:nth-child(1)>div:nth-child(3)>div:nth-child(1),
+    .Ah-StepperLogin>div:nth-child(1)>div:nth-child(4)>div:nth-child(1) {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+}
+
+
+
+@media screen and (min-width:502px) and (max-width:1118px) {
+    button.nb-buttons1 {
+        font-size: var(--fs-medium-text);
+        left: 52vw;
+        padding-bottom: 2rem !important;
+    }
+
+    button.nb-buttons2 {
+        font-size: var(--fs-medium-text);
+        left: 58vw;
+    }
+
+    button.nb-buttons3 {
+        font-size: var(--fs-medium-text);
+        left: 58vw;
+    }
+}
