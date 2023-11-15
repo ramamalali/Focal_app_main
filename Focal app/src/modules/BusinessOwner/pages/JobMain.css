@@ -1,0 +1,336 @@
+.Ah-main-job {
+    background-image: url('../images/background-login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 7rem !important;
+   /*  height: 100vh;*/
+    overflow-y: auto;
+    height: max-content;
+   
+}
+
+.Ah-Name-container {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Ah-container-white {
+    border-radius: 30px;
+    width: 70%;
+    background-color: var(--clr-white);
+    padding: 50px 40px;
+    font-family: var(--font-family);
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+
+}
+
+.Ah-Job-title h1 {
+    font-size: var(--fs-medium-title) !important;
+    ;
+    font-weight: 700 !important;
+    width: 100%;
+}
+
+.Ah-Job-title p {
+    font-size: var(--fs-medium) !important;
+    ;
+    font-weight: 400 !important;
+    width: 100%;
+}
+
+.job-status {
+    font-size: var(--fs-small);
+    /*10 px*/
+    display: flex;
+    justify-content: space-between;
+    line-height: 5px;
+}
+
+.Ah-status-point {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.Ah-orange {
+    color: var(--clr-main);
+}
+
+.Ah-green {
+    color: var(--clr-succsess);
+}
+
+.Ah-blue {
+    color: var(--clr-brightness-blue);
+}
+
+.Ah-border-orange {
+    border: 2px solid var(--clr-main);
+}
+
+.Ah-border-green {
+    border: 2px solid var(--clr-succsess);
+}
+
+.Ah-border-blue {
+    border: 2px solid var(--clr-brightness-blue);
+}
+
+.Ah-bg-green {
+    background-color: var(--clr-succsess);
+}
+
+.Ah-date {
+    font-size: var(--fs-small);
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    gap: 8px;
+}
+
+.Ah-Status-card {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 248px;
+    height: 227px;
+    border-radius: 8px;
+}
+
+.Ah-Status-card-title {
+    font-size: var(--fs-medium-text);
+}
+
+.Ah-Status-card-num p {
+    font-size: var(--fs-larger-title);
+}
+
+.Ah-card-button {
+    width: 204px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.Ah-job-button {
+    width: 240px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    border: 2px solid var(--clr-black);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+.Ah-delete-button {
+    width: 240px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    border: none;
+    background-color: transparent;
+    color: var(--clr-danger);
+}
+
+.Ah-complaint {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.Ah-decr-title {
+    font-size: var(--fs-medium);
+    color: var(--clr-disable);
+}
+
+.Ah-decr-text {
+    font-size: var(--fs-medium-text) !important;
+}
+
+.Ah-job-require {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.Ah-job-require p {
+    font-size: var(--fs-medium-text);
+    border-radius: 20px;
+    background-color: var(--clr-brightness-pink);
+    padding: 5px 10px;
+}
+
+.Ah-job-question {
+    list-style: disc;
+    font-size: var(--fs-medium);
+}
+
+.SM-container {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SM-container-white {
+    width: 70%;
+    background-color: white;
+    padding: 50px 40px;
+    font-family: Montserrat;
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+    border-radius: 30px;
+
+}
+
+.SM-title {
+    border-bottom: 1px solid #938C8C;
+    ;
+    margin-top: 18px;
+}
+
+.SM-title h1 {
+    font-family: Montserrat;
+    font-size: 24px !important;
+    font-weight: 700;
+    width: 100%;
+
+}
+
+.SM-title P {
+    color: var(--focal-x-font-color, #282828);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.OS-employee  {
+    color: var(--focal-x-disable, #938C8C);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.SM-content {
+    margin-top: 14PX;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider hr {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border: none;
+    border-top: 1px solid var(--focal-x-disable, #938C8C);
+}
+
+.divider p {
+    color: var(--focal-x-disable, #938C8C) !important;
+    padding: 0 18px;
+    z-index: 1;
+}
+
+
+
+
+.SM-Employee {
+    background-image: url('../images/background-login.png');
+    padding-top: 50px;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
+@media only screen and (min-width:1600px) {
+    .Ah-container-white,.SM-container-white {
+        width: 80%;
+        height: max-content;
+        padding: 40px 30px;
+    }
+
+    .Ah-Job-title h1 {
+        font-size: var(--fs-large) !important;
+        margin-bottom: 15px;
+    }
+
+    .Ah-Job-title p {
+        font-size: var(--fs-medium-title) !important;
+    }
+
+    .Ah-job-require p {
+        font-size: var(--fs-medium-title);
+    }
+
+    .Ah-decr-title {
+        font-size: var(--fs-medium-text);
+    }
+
+    .Ah-decr-text {
+        font-size: var(--fs-medium-title) !important;
+    }
+
+    .Ah-statusCard-container {
+        justify-content: space-evenly !important;
+    }
+
+    .Ah-complaint {
+        margin-top: 30px;
+    }
+
+    .Ah-job-question {
+        font-size: var(--fs-medium-text);
+    }
+
+    .job-status,
+    .Ah-date {
+        font-size: var(--fs-medium-text) !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Ah-container-white,.SM-container-white {
+        width: 90%;
+        height: max-content;
+        padding: 40px 30px;
+    }
+
+    .Ah-statusCard-container {
+        justify-content: center !important;
+    }
+
+    .Ah-Job-title h1 {
+        font-size: var(--fs-medium-text) !important;
+    }
+
+    .Ah-job-require p {
+        font-size: var(--fs-small);
+    }
+}

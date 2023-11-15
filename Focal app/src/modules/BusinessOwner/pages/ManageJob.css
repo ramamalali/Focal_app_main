@@ -1,0 +1,391 @@
+
+.Ah-manage-job{
+    background-image: url(../images/background-login.png);
+    background-size: cover;
+    padding-top: 7rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh ; 
+    max-height:max-content ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+;
+}
+.Ah-title{
+    font-family: var(--font-family) ;
+}
+.Ah-title h1{
+    font-size: var(--fs-medium-title);
+    font-weight: 700;
+    width: 100%;
+   
+}
+.Ah-title p{
+    font-size: var(--fs-medium);
+    font-weight: 400;
+   /* text-align: center;*/
+    margin:0 auto;
+   /* padding: 0 80px;*/
+   width: 80%;
+}
+button.Ah-add-job{
+    width: 202px;
+    height: max-content;
+    color: white;
+    background-color: var(--clr-secondary-black);
+    font-family: var(--font-family);
+    font-size: var(--fs-medium-text);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    border-radius: 15px;
+}
+.Ah-links{
+    padding: 0 20px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+}
+.Ah-links a{
+    text-decoration: none;
+    color: var(--clr-disable);
+}
+.Ah-links a:hover{
+    color: var(--clr-secondary-black) !important;
+}
+.Ah-active-link{
+    color: var(--clr-secondary-black) !important;
+    border-bottom: 2px solid var(--clr-main);
+}
+
+
+.Ah-card{
+    width: 305px;
+    height: 349px;
+    background-color:  var(--clr-white);
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+}
+.Ah-card-title p{
+    font-family: var(--font-family);
+    text-align: left;
+    padding: 18px 0 0 32px ;
+    font-size: var(--fs-medium-text) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 8px !important;
+}
+.Ah-card-status{
+    font-size: var(--fs-small);  /*10 px*/
+    display: flex;
+    justify-content:space-between ;
+    line-height: 5px;
+    padding: 0 32px;
+}
+.Ah-status-point{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+.Ah-state{
+    color: var(--clr-main);
+    
+}
+.Ah-green{
+    color: var(--clr-succsess);
+}
+.Ah-bg-green{
+    background-color: var(--clr-succsess);
+}
+.Ah-bg-orange{
+    background-color: var(--clr-main);
+}
+.Ah-orange{
+    color: var(--clr-main);
+}
+.Ah-card-date{
+    font-size: var(--fs-small);
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    gap: 8px;
+}
+.Ah-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Ah-views-num ,.Ah-candidate-num {
+    font-family: var(--font-family);
+    font-size: var(--fs-larger);
+    width: 83px;
+    font-weight: 400;
+    margin: 0;
+}
+.Ah-line{
+    width: 1px;
+    height: 100px;
+    background-color: var(--clr-disable);
+}
+
+.Ah-views p:nth-child(2),.Ah-candidate > p:nth-child(2){
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    font-weight: 100 !important;
+    line-height: 24px;
+}
+.Ah-candidate-button{
+    width: 204px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+.Ah-information-button{
+    width: 204px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+.Ah-cancel-button{
+    font-family: var(--font-family);
+    background-color:var(--clr-white)!important;
+    border: 0;
+    outline: none;
+    color: var(--clr-disable);
+    font-size: var(--fs-medium);
+}
+.Ah-card-text{
+    height: 150px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium-title);
+    font-weight: 400;
+    line-height: 28px;
+}
+@media only screen and (max-width: 768px) {
+    button.Ah-add-job{
+        width: 150px;
+      /*  height: 32px;*/
+        font-size: var(--fs-medium);
+    }
+    
+    .Ah-links a{
+        font-size: var(--fs-medium) !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .Ah-large-screen{
+         margin-top: 18vh;
+    }
+    .Ah-card{
+        margin: 0 5rem;
+    }
+}
+
+
+
+
+/*
+.Ah-manage-job{
+    background-image: url(../images/background-login.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 7rem;
+    background-repeat: no-repeat;
+    height:100vh;
+    overflow-y: auto;
+}
+.Ah-title{
+    font-family: var(--font-family) ;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.Ah-title h1{
+    font-size: var(--fs-medium-title);
+    font-weight: 700;
+    width: 100%;
+    text-align: center !important;
+}
+.Ah-title p{
+    font-size: var(--fs-medium);
+    font-weight: 400;
+    text-align: center !important;
+    padding: 0 80px;
+}
+
+.Ah-add-job{
+    width: 202px;
+    height: 44px;
+    color: white;
+    background-color: var(--clr-secondary-black);
+    font-family: var(--font-family);
+    font-size: var(--fs-medium-text);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+.Ah-links{
+    padding: 0 20px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+}
+.Ah-links a{
+    text-decoration: none;
+    color: var(--clr-disable);
+}
+.Ah-links a:hover{
+    color: var(--clr-secondary-black) !important;
+}
+.Ah-active-link{
+    color: var(--clr-secondary-black) !important;
+    border-bottom: 2px solid var(--clr-main);
+}
+
+
+.Ah-card{
+    width: 305px;
+    height: 349px;
+    background-color:  var(--clr-white);
+    box-shadow: 0px 4px 20px 0px rgba(40, 40, 40, 0.15);
+    border-radius: 0.625rem;
+    margin: 0px 5rem;
+    
+}
+.Ah-card-title p{
+    font-family: var(--font-family);
+    text-align: left;
+    padding: 18px 0 0 32px ;
+    font-size: var(--fs-medium-text) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 8px !important;
+}
+.Ah-card-status{
+    font-size: var(--fs-small);  
+    display: flex;
+    justify-content:space-between ;
+    line-height: 5px;
+    padding: 0 32px;
+}
+
+.Ah-cards {
+    padding-bottom:7rem;
+}
+
+.Ah-status-point{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+.Ah-state{
+    color: var(--clr-main);
+    
+}
+.Ah-green{
+    color: var(--clr-succsess);
+}
+.Ah-bg-green{
+    background-color: var(--clr-succsess);
+}
+.Ah-bg-orange{
+    background-color: var(--clr-main);
+}
+.Ah-orange{
+    color: var(--clr-main);
+}
+.Ah-card-date{
+    font-size: var(--fs-small);
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    gap: 8px;
+}
+.Ah-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Ah-views-num ,.Ah-candidate-num {
+    font-family: var(--font-family);
+    font-size: var(--fs-larger);
+    width: 83px;
+    font-weight: 400;
+    margin: 0;
+}
+.Ah-line{
+    width: 1px;
+    height: 100px;
+    background-color: var(--clr-disable);
+}
+
+.Ah-views p:nth-child(2),.Ah-candidate > p:nth-child(2){
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    font-weight: 100 !important;
+    line-height: 24px;
+}
+.Ah-candidate-button{
+    width: 204px;
+    height: 40px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+.Ah-information-button{
+    width: 204px;
+    height: 40px;
+    font-family: Montserrat;
+    font-size: var(--fs-medium);
+    line-height: 28px;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+.Ah-cancel-button{
+    font-family: var(--font-family);
+    background-color:var(--clr-white)!important;
+    border: 0;
+    outline: none;
+    color: var(--clr-disable);
+    font-size: var(--fs-medium);
+}
+.Ah-card-text{
+    height: 150px;
+    font-family: var(--font-family);
+    font-size: var(--fs-medium-title);
+    font-weight: 400;
+    line-height: 28px;
+}
+@media only screen and (max-width: 768px) {
+    button.Ah-add-job{
+        width: 150px;
+        height: 32px;
+        font-size: var(--fs-medium);
+    }
+    
+    .Ah-links a{
+        font-size: var(--fs-medium) !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .Ah-large-screen{
+         margin-top: 100px;
+    }
+}
+*/
