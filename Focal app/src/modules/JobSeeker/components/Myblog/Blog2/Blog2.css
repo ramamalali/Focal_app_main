@@ -1,8 +1,16 @@
-.ay-componant-card{ margin-top: 3rem; display: flex; justify-content: center;}
+.ay-componant-card{ 
+    margin-top: 3rem;
+     display: flex;
+      justify-content: center; 
+      flex-wrap: wrap;
+       width:100%; 
+       gap: 3.37rem;
+     }
 .submit{ display: flex; 
     justify-content: center; 
     align-items: center;
     margin-top: 1.38rem;
+    
     }
     
     .submit .ay-btn{
@@ -14,3 +22,9 @@
     cursor: pointer;
     font-weight: 500;}
     .ay-a{text-decoration: none;}
+
+    @media screen and (max-width:1200px) {
+        .ay-componant-card{ 
+               gap: 1rem;
+             }
+    }

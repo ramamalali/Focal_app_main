@@ -2,9 +2,7 @@
 
 .ay-card-parent{
 width: 22.125rem;
-height: 25.125rem;
-margin-left: 2rem;
-margin-right: 2rem;
+
 min-height: 25.125rem;   
 border-radius: 0.625rem;
 background: var(--focal-x-background, #FFF);
@@ -44,7 +42,7 @@ justify-content: space-between;}
 
 .ay-card-profail{
 display: flex; 
-margin-bottom: 2rem;
+margin-bottom: 0.63rem;
 margin-top: 1rem;}
 
 .ay-card-profail p{

@@ -1,0 +1,30 @@
+.rn-group-login {
+    margin: 0.88rem auto 0.62rem auto;
+}
+
+.rn-group-login a {
+    border: none;
+    color: #282828;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+
+.rn-group-login .rn-btn-login {
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+
+
+
+@media screen and (max-width:1130px) {
+    .rn-group-login .rn-btn-login {
+        margin-right: 1rem;
+    }
+
+}

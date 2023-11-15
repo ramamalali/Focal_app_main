@@ -5,9 +5,15 @@ import camera from '../../asset/imgs/camera.png'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Link, NavLink } from 'react-router-dom';
  {/* ------------------------------------------- */}
 const Sidebar = () => {
   const [show, setshow] = useState(true);
+  const [file, setFile] = useState();
+  function handleChange(e) {
+    console.log(e.target.files);
+    setFile(URL.createObjectURL(e.target.files[0]));
+}
   /* const [tgg, settgg] = useState(!show); */
 
   return (
@@ -17,18 +23,20 @@ const Sidebar = () => {
      
         {/* ---------------------icon bars-------------------- */}
         
-        <button onClick={() => setshow(show => !show)} className="br-Asclickbtn">
-        <FontAwesomeIcon icon={faBars} className="br-Asclickicon" />
-        </button>
+       
 
          {/* ------------------------------------------- */}
         
-        {show && <div className="br-Asmain">
-
+        <div className="br-Asmain">
+        <button onClick={() => setshow(show => !show)} className="br-Asclickbtn">
+        <FontAwesomeIcon icon={faBars} className="br-Asclickicon" />
+        </button>
+        {show && <div className="br-show">
         <div className="br-img-top">
-          <label>
-            <input type="file" name="name" accept=".png, .jpg, .jpeg" style={{ display: 'none' }} />
+          <label className='lable-img'>
+            <input type="file" name="name" accept=".png, .jpg, .jpeg" style={{ display: 'none' }} onChange={handleChange} />
             <img src={camera} alt="camera" className='br-img' />
+            <img src={file} alt="" className="src" />
           </label>
         </div>
         {/* ----------------------------------------- */}
@@ -36,57 +44,59 @@ const Sidebar = () => {
           <h4 className="br-Astitle">Karem Ahmed</h4>
           <p className="br-Aspargr">Web Development</p>
           <button className="br-Asbtn1">Professional advice</button>
-          <hr className='br-Ashorizontal' />
+          <hr className='br-Ashorizontal w-100' />
         </div>
         {/* ----------------------------------------- */}
         <div className="br-AsLinkss">
           <div className='br-Aslink1'>
-            {/* <Link className='br-Aslink11'>INFORMATION  </Link> */}
-            <a className='br-Aslink11'>INFORMATION  </a>
+            <Link className='br-Aslink11'>INFORMATION  </Link>
+            {/* <a className='br-Aslink11'>INFORMATION  </a> */}
           </div>
 
           <div className='br-Aslink1'>
             
-          {/* <NavLink  id="br-Aslink10"
+          <NavLink  id="br-Aslink10"
            to="/messages" 
             className= {({ isActive, isPending }) =>
           isPending ? "pending" : isActive ? "active" : ""
           }
          >
         RESUMS
-        </NavLink>  */}
-        <a  id="br-Aslink10"
+        </NavLink> 
+        {/* <a  id="br-Aslink10"
            to="/messages" 
             className= {({ isActive, isPending }) =>
           isPending ? "pending" : isActive ? "active" : ""
           }
          >
         RESUMS
-        </a>
-      </div>
+        </a>*/}
+      </div> 
         
             
          
           <div className='br-Aslink1'>
-            {/* <Link className='br-Aslink11'>BLOGS  </Link> */}
-            <a className='br-Aslink11'>BLOGS  </a>
+            <Link className='br-Aslink11'>BLOGS  </Link>
+            {/* <a className='br-Aslink11'>BLOGS  </a> */}
           </div>
         </div>
-        <hr className='br-Ashorizontal2' />
-
+        <hr className='br-Ashorizontal2 w-100' />
+          <div className="side-bottom">
         <div className="br-Aslogout">
-          {/* <Link className='br-Aslink13'> log out  </Link> */}
-          <a className='br-Aslink13'> log out  </a>
+          <Link className='br-Aslink13'> log out  </Link>
+          {/* <a className='br-Aslink13'> log out  </a> */}
         </div>
         <div className="br-AsTerms">
-          {/* <Link className='br-Aslink14'>Terms and Conditions </Link> */}
-          <a className='br-Aslink14'>Terms and Conditions </a>
+          <Link className='br-Aslink14'>Terms and Conditions </Link>
+          {/* <a className='br-Aslink14'>Terms and Conditions </a> */}
         </div>
-
+        </div>
+        </div>
+         }
       </div>
 
       
-       }
+      
       </div>
     </>
   )

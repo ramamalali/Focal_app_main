@@ -19,13 +19,14 @@ export default function Card(props) {
   
   return (
     <>
-    <div className='aya-p'>
+
     {
       props.filter.map((data) => {
        
         return (
           <>
-            <div className={(data.reverse) ? "card reverse" : "ay-card-parent"} key={data.id}>            
+              <div className='aya-p'>
+            <div className="ay-card-parent" key={data.id}>            
                <div className='ay-card-imag '><img src={data.img} /></div>
                <p className='ay-card-pragraph'>{data.paragragh}</p>  
                 <div className='ay-card-parent-save'><img src={img?victor2:victor3} onClick={black}/></div>
@@ -38,16 +39,17 @@ export default function Card(props) {
               </div>
               {data?.hachtagdata?.map((i) =>{
                 return( 
-                 <a href="" className='ay-card-a'>{i.hachtag}</a>
+                <a href="" className='ay-card-a'>{i.hachtag}</a>
                  )
               })}
+            </div>
             </div>
             </>
             )
           }
         )
       }
-   </div>
+  
    </>
   )
 }

@@ -1,40 +1,98 @@
 .br-Sidebarss {
    text-align: center;
-
-}
-@media(min-width:1024px){
-   .br-Sidebarss{
-      padding-left: 9.75rem;
-   }
+   max-width: 14.75rem;
+   padding: 0;
 }
 
- @media(max-width:1023px){
-   .br-Asmain{
-   
-   width: 14.75rem;
-   position: fixed;
-   background-color: white;
-/*    display: none; */
+.br-Sidebarss .br-AsLinkss,
+.side-bottom {
+   text-align: left;
+   margin-left: 2rem;
+
+}
+
+.lable-img{
+   position: relative;
+  
+}
+.lable-img .src{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+   z-index: 0;
+}
+
+
+@media(min-width:1024px) {
+   .br-Sidebarss {
+      margin-left: 9.75rem;
+   }
+}
+
+@media(max-width:1080px) {
+
+   .br-Sidebarss .br-AsLinkss,
+   .side-bottom {
+
+      margin-left: 1rem;
 
    }
-   .br-Sidebarss{
-      z-index:10;
+}
+
+@media(max-width:1023px) {
+
+   .br-Asmain {
+      text-align: center;
+      width: 15.75rem;
+      position: fixed;
+      top: 3.05rem;
+      left: 0;
+
+
+
+
+
    }
-} 
- 
+
+   .br-Sidebarss .br-AsLinkss,
+   .side-bottom {
+
+      text-align: center;
+
+   }
+
+   .br-show {
+      background-color: rgb(255, 255, 255);
+      height: 100vh;
+      padding-top: 1rem;
+      border: 1px solid var(--clr-main);
+      border-left: none;
+      border-radius: 8px;
+   }
+
+   .br-Sidebarss {
+      z-index: 5;
+   }
+
+}
+
 
 @media(min-width:1024px) {
    .br-Asclickicon {
       display: none;
    }
 }
+
 .br-Asclickbtn {
    border: none;
    background-color: transparent;
    font-size: 20px;
    z-index: 5;
-  position: absolute;
-  left: 3%;
+   position: absolute;
+   left: 3%;
 }
 
 
@@ -45,14 +103,15 @@
 
 
 
- .br-Asname .br-Astitle{
+.br-Asname .br-Astitle {
    color: var(--focal-x-font-color, #282828);
    font-family: Montserrat;
    font-size: 1.5rem;
    font-style: normal;
    font-weight: 700;
    line-height: normal;
- }
+}
+
 .br-Asname .br-Asbtn1 {
    border-radius: 8px;
    color: var(--clr-secondary-black);
@@ -82,12 +141,13 @@
 .br-AsLinkss .br-Aslink1 {
    margin-bottom: 2rem;
    color: var(--focal-x-font-color, #282828);
-font-family: Montserrat;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.75rem; /* 140% */
-text-transform: uppercase;
+   font-family: Montserrat;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+   /* 140% */
+   text-transform: uppercase;
 
 }
 
@@ -101,7 +161,7 @@ text-transform: uppercase;
 
 }
 
-.br-AsLinkss .br-Aslink1 a{
+.br-AsLinkss .br-Aslink1 a {
    text-decoration: none !important;
    color: var(--clr-secondary-black) !important;
    font-weight: 400;
@@ -110,7 +170,7 @@ text-transform: uppercase;
    position: relative;
 }
 
-.br-AsLinkss .br-Aslink1 a.active::after{
+.br-AsLinkss .br-Aslink1 a.active::after {
    content: '';
    position: absolute;
    width: 50%;
@@ -153,30 +213,39 @@ text-transform: uppercase;
    text-align: left;
 
 }
+
 .br-Asname .br-Ashorizontal2 {
    width: 180px;
    margin: auto;
    margin-top: 20px;
    font-weight: 600;
-   margin-bottom: 15px;
+   margin-bottom: 2rem;
 }
+
 .br-Aslogout .br-Aslink13 {
- 
+
    color: var(--clr-disable);
 
-font-size: 1.25rem;
-text-decoration: none;
-font-style: normal;
-font-weight: 500;
-line-height: 1.75rem; /* 140% */
+   font-size: 1.25rem;
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.75rem;
+
+   /* 140% */
 }
 
+.br-AsTerms  {
+
+   margin-top: 1.13rem;
+}
 .br-AsTerms .br-Aslink14 {
    font-size: 12px;
    font-weight: 400;
    line-height: 24px;
    letter-spacing: 0em;
    color: var(--clr-secondary-black);
+  
 }
 
 .br-Ashorizontal2 {

@@ -1,8 +1,11 @@
+import NavBar from '../../components/NavBarAll/NavBar'
 import FormLogin from './FormLogin/FormLogin'
 import './RegisterStyle.css'
 
 export default function Register () {
     return (
+        <>
+        <NavBar />
         <div className='HD_section-JobLogin'>
         <div className='HD_boxTitlle'>
             <h1 className='HD_titlle'>Create New Account as</h1>
@@ -18,5 +21,6 @@ export default function Register () {
                 <p className=' p'>By Signing up you agree to the <span>terms</span> of use and <span>privacy policy</span></p>
         </div>
     </div>
+    </>
     )
 }

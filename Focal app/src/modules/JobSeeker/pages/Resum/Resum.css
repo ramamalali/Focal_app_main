@@ -2,7 +2,13 @@
    background-repeat: no-repeat;
    background-size: cover;
    min-height: 100vh;
+   width: 100%;
    font-family: var(--font-family) !important;
+   overflow-x: hidden;
+
+}
+.br-As-col2{
+   padding-left: 4rem;
 }
 @media(min-width:1024px){
    .br-As-Row{

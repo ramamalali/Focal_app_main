@@ -50,6 +50,9 @@ border-bottom: 2px solid #ff8500;}
 font-weight: bolder;
 color: #000000;
 }
+@media screen and (max-width : 1100px) {
+.ay-parent-search
+{width: 27.5rem;}}
 @media screen and (max-width : 630px) {
 .ay-parent-search
 {width: 15.5rem;}}
