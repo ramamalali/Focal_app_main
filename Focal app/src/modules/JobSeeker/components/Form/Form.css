@@ -114,8 +114,9 @@ option {
 .Ah_formEndNext {
     background-color: unset;
     border: none;
-    color: var(--clr-main);
+    color: var(--clr-main) !important;
     margin: 0.8rem;
+    text-decoration: none;
 }
 
 .Ah_progresBar {
@@ -162,7 +163,7 @@ option {
     /* height: 5rem; */
     /* z-index: 2; */
     background-color: #D9D9D9;
-    transition: 0.5s ease-in;
+    transition: 0.6s ease-in;
 
 }
 @media screen and (max-width: 480px) {

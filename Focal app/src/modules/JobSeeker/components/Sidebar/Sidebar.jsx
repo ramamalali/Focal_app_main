@@ -6,12 +6,12 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom';
- {/* ------------------------------------------- */}
+
 const Sidebar = () => {
   const [show, setshow] = useState(true);
   const [file, setFile] = useState();
   function handleChange(e) {
-    console.log(e.target.files);
+ 
     setFile(URL.createObjectURL(e.target.files[0]));
 }
   /* const [tgg, settgg] = useState(!show); */
@@ -49,14 +49,16 @@ const Sidebar = () => {
         {/* ----------------------------------------- */}
         <div className="br-AsLinkss">
           <div className='br-Aslink1'>
-            <Link className='br-Aslink11'>INFORMATION  </Link>
+            <NavLink to ="/jopseekerprofile/information" className= {({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+          }>INFORMATION  </NavLink>
             {/* <a className='br-Aslink11'>INFORMATION  </a> */}
           </div>
 
           <div className='br-Aslink1'>
             
           <NavLink  id="br-Aslink10"
-           to="/messages" 
+           to="/jopseekerprofile/resum" 
             className= {({ isActive, isPending }) =>
           isPending ? "pending" : isActive ? "active" : ""
           }
@@ -76,14 +78,16 @@ const Sidebar = () => {
             
          
           <div className='br-Aslink1'>
-            <Link className='br-Aslink11'>BLOGS  </Link>
+            <NavLink to ="/jopseekerprofile/blog" className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+          }>BLOGS  </NavLink>
             {/* <a className='br-Aslink11'>BLOGS  </a> */}
           </div>
         </div>
         <hr className='br-Ashorizontal2 w-100' />
           <div className="side-bottom">
         <div className="br-Aslogout">
-          <Link className='br-Aslink13'> log out  </Link>
+          <Link to="/login" className='br-Aslink13'> log out  </Link>
           {/* <a className='br-Aslink13'> log out  </a> */}
         </div>
         <div className="br-AsTerms">

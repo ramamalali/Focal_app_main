@@ -22,7 +22,21 @@ export default function FormLogin() {
             e.preventDefault();
             console.log(inputFields)
         }
+        const[pass , setPass] = useState(false)
+        const[password , setPasword] = useState("password")
+        const passw = () => {
+           
+            if(pass === true){
+                setPasword("text")
+                
+                setPass(false)
+            }
+            if(pass === false){ 
+             setPasword("password")  
+             setPass(true)
+             }
 
+        }
 
     return (
         <div className='HD_ContainerLogin'>
@@ -48,7 +62,7 @@ export default function FormLogin() {
                     
                     <div className='inputBox'>
                         <input
-                        type='password' 
+                        type={password} 
                         name='password'
                         required placeholder='Enter your password'
                         value={input.password}
@@ -64,14 +78,14 @@ export default function FormLogin() {
 )
 
 })}   
-                        <span className='icon'><RiEyeLine/></span>
+                        <span className='icon' onClick={passw}><RiEyeLine/></span>
                         <label></label>
                     </div>
                     <div className='HD_forget'> 
                         <label><a href=''>forget password?</a></label>
                     </div>
                     <div className='btns'>
-                    <button onClick={submit} className='btnlogin'> <p>Login</p></button>
+                    <button onClick={submit} className='btnlogin'>Create New Account</button>
                     <button className='btnGoogle'>
                         <img src={google} className='imgGoogle'/>
                         <p>Continue with Google</p>

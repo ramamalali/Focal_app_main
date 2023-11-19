@@ -4,27 +4,22 @@ import "../Training/Training.css"
 const AddTraining = ({ onSubmit }) => {
   const [name1, setName1] = useState('');
   const [name2, setName2] = useState('');
-  const [inputdata, setInputdata] = useState('');
-  const dates = ((new Date().getFullYear()))
-  const [startDate, setStartDate] = useState(dates);
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
 
-{/* ------------------------------------ */}
+
   const handleSubmit = () => {
-    onSubmit(name1, name2, inputdata, startDate);
+    onSubmit(name1, name2, startDate , endDate);
     setName1('');
     setName2('');
-    setInputdata('');
     setStartDate('')
-
+    setEndDate('')
   };
-{/* ------------------------------------ */}
-  const datachange = (e) => {
-    setInputdata(e.target.value)
 
-  }
-  console.log(inputdata)
 
-{/* ------------------start return------------------ */}
+
+
+
   return (
     <div className='KO-Add-Items'>
       <input
@@ -46,8 +41,15 @@ const AddTraining = ({ onSubmit }) => {
         className='br-value3'
         type="date"
         placeholder="Enter DataTime"
-        value={inputdata}
-        onChange={datachange}
+        value={startDate}
+        onChange={(e) => setStartDate(e.target.value)}
+      />
+      <input
+        className='br-value3'
+        type="date"
+        placeholder="Enter DataTime"
+        value={endDate}
+        onChange={(e) => setEndDate(e.target.value)}
       />
       <button onClick={handleSubmit} className='br-main-button2'>+</button>
     </div>

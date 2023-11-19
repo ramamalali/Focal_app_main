@@ -44,7 +44,8 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    word-wrap: break-word
+    word-wrap: break-word;
+    cursor: pointer;
 }
 .inputBox input{
     width: 100%;
@@ -96,26 +97,23 @@
 .btns .btnlogin{
     width: 240px;
     height: 48px;
-    margin: px 0;
     display: flex;
-    background-color: black;
-    color: antiquewhite;
-    position: relative;
-    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+     margin: px 0;
+     display: flex;
+     background-color: black;
+     color: antiquewhite;
+     position: relative;
+     border-radius: 4px;
+     text-align: center;
+     color: var(--clr-white);
+     font-size: 18px;
+     font-family: var(--font-family);
+     font-weight: 700;
+     line-height: 28px;
 }
-.btnlogin p{
-    width: 154px;
-    height: 24px;
-    color: var(--clr-white);
-    font-size: 18px;
-    font-family: var(--font-family);
-    font-weight: 700;
-    line-height: 28px;
-    word-wrap: break-word;
-    position: absolute;
-    top: 8px;
-    left: 35px;
-}
+
 .btns .btnGoogle{
     width: 240px;
     height: 48px;

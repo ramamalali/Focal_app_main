@@ -3,18 +3,17 @@ import React from "react";
 import { faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Training/Training.css"
- {/* ------------------------------------------- */}
-const TrainDelete = ({ id, name1, name2, onEdit, onDelete, inputdata, startDate }) => {
+
+const TrainDelete = ({ id, name1, name2, onEdit, onDelete,  startDate ,endDate}) => {
     const handleEditClick = () => {
       onEdit(id);
     };
-   {/* ------------------------------------------- */}
+
     const handleDeleteClick = () => {
       onDelete(id);
     };
-    console.log(inputdata)
-    console.log(startDate)
-     {/* ------------------------------------------- */}
+
+   
     return (
     //   <div className="br-skills-main">
     //     <h1>{name1}</h1>
@@ -38,7 +37,7 @@ const TrainDelete = ({ id, name1, name2, onEdit, onDelete, inputdata, startDate 
       <FontAwesomeIcon icon={faTrash} className="br-Delete" onClick={handleDeleteClick}/>
         </div>
         {/* -------------------data------------------------ */}
-        <p className="br-date"> {startDate} To {inputdata} </p>
+        <p className="br-date"> {startDate} To {endDate} </p>
         
     </div>
   </div>

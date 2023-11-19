@@ -1,14 +1,20 @@
 .section_padding{
     padding: 4rem 7.5rem;  
+    padding-bottom: 2rem;
 }
 .HD_footer{
     background-color: var(--clr-secondary-black);
+}
+.HD_footer a{
+    text-decoration: none;
 }
 
 .HD_footer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     overflow: hidden;
+ 
 }
 .HD_footer-divs{
     display: flex;
@@ -18,26 +24,31 @@
     flex-wrap: wrap;
     width: 100%;
     text-align: left;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .HD_footer-div{
-    width: 150px;
+   
     display: flex;
     justify-content: flex-start;
     flex-direction: column; 
     color: azure;
 }
-.HD_footer-div .keep{
-    width: 178px;
-}
-.HD_footer-div .pkeep{
-    width: 177px;
-}
+
 .HD_footer-div a{
     text-decoration: none;
 }
 .HD_footer-div p{
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-bottom: 0;
+
+}
+.HD_footer-div a{
     color: white;
     font-size: 16px;
     font-family: var(--font-family);
@@ -62,9 +73,9 @@
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word;
-    width: 379px;
     position: relative;
     bottom: 1px;
+    margin-bottom: 0;
 }
 .endp{
     position: relative;
@@ -73,7 +84,7 @@
 }
 
 .line{
-    width: 70%;
+    width: 63%;
     height: 2px;
     margin-left: auto;
     margin-right: auto;
@@ -83,11 +94,15 @@
 }
 .HD_footer-below{
     display: flex;
+    align-items: center;
     padding: 1rem 7.5rem;
     gap: 1rem;
 }
 @media screen and (max-width: 850px){
-
+    .section_padding{
+        padding: 1rem 3.5rem; 
+        padding-top: 0; 
+    }
     .HD_footer-div h4{
         font-size: 24px;
         line-height: 42px;
@@ -104,6 +119,11 @@
     }
     .HD_footer-text p{
         font-size: 14px;
+    }
+    .HD_footer-below{
+      
+        padding: 1rem 3.5rem;
+     
     }
     
 }

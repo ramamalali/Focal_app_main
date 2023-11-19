@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Button = () => {
   return (
     <> 
-   <Link to= '/lll' className='ay-a'> 
+   <Link to= '/jopseekerprofile/blog/mublog' className='ay-a'> 
    <div className='submit'>
    <button className='ay-btn'>Contenu as Bloger</button>
    </div>

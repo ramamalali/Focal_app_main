@@ -42,13 +42,13 @@ const Training = () => {
     setSelectedExperience(null);
     setEditedExperience(null);
   };
-    const handleAddInfoSubmit = (name1, name2,inputdata,startDate) => {
+    const handleAddInfoSubmit = (name1, name2, startDate,endDate) => {
     const newExperience = {
       id: Experience.length + 1,
       name1,
       name2,
-      inputdata,
-      startDate
+      startDate,
+      endDate,
     };
     setExperience([...Experience, newExperience]);
     setShowAddExp(false);
@@ -73,8 +73,8 @@ const Training = () => {
           name2={Experience.name2}
           onEdit={handleEdit}
           onDelete={handleDelete}
-          inputdata={Experience.inputdata}
           startDate={Experience.startDate}
+          endDate={Experience.endDate}
         />
       ))}
       <p className='br-main-pargrth'>{text}
@@ -93,6 +93,18 @@ const Training = () => {
             type="text"
             value={editedExperience.name2}
             onChange={(e) => setEditedExperience({ ...editedExperience, name2: e.target.value })}
+          />
+          <input
+          className='br-value1'
+            type="date"
+            value={editedExperience.startDate}
+            onChange={(e) => setEditedExperience({ ...editedExperience,  startDate: e.target.value })}
+          />
+          <input
+          className='br-value2'
+            type="date"
+            value={editedExperience.endDate}
+            onChange={(e) => setEditedExperience({ ...editedExperience, endDate: e.target.value })}
           />
           <FontAwesomeIcon icon={faFloppyDisk} onClick={handleSave} className='br-main-button2'/>
         </div>

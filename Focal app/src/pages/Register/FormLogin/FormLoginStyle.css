@@ -99,28 +99,23 @@
     justify-content: center;
 }
 .btns .btnlogin{
-    width: 240px;
-    height: 48px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     margin: px 0;
     display: flex;
     background-color: black;
     color: antiquewhite;
     position: relative;
     border-radius: 4px;
-}
-.btnlogin p{
-    width: 154px;
-    height: 24px;
+    text-align: center;
     color: var(--clr-white);
     font-size: 18px;
     font-family: var(--font-family);
     font-weight: 700;
     line-height: 28px;
-    word-wrap: break-word;
-    position: absolute;
-    top: 8px;
-    left: 35px;
 }
+
 .btns .btnGoogle{
     width: 240px;
     height: 48px;

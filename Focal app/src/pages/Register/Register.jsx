@@ -1,11 +1,10 @@
-import NavBar from '../../components/NavBarAll/NavBar'
+
 import FormLogin from './FormLogin/FormLogin'
 import './RegisterStyle.css'
 
 export default function Register () {
     return (
         <>
-        <NavBar />
         <div className='HD_section-JobLogin'>
         <div className='HD_boxTitlle'>
             <h1 className='HD_titlle'>Create New Account as</h1>

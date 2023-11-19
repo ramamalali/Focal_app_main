@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export default function Footer() {
@@ -9,39 +10,36 @@ export default function Footer() {
 
                     <div className='HD_footer-div'>
                         <h4>Job</h4>
-                        <p>Search Employee</p>
-                        <p className='endp'>Search Job</p>
+                        <Link>Search Employee</Link>
+                        <Link className='endp'>Search Job</Link>
                     </div>
 
                     <div className='HD_footer-div'>
                         <h4>Freelance</h4>
-                        <p>Search Freelance</p>
-                        <p className='endp'>Search Services</p>
+                        <Link>Search Freelance</Link>
+                        <Link className='endp'>Search Services</Link>
                     </div>
 
                     <div className='HD_footer-div'>
                         <h4>Blog</h4>
-                        <p>Search Blogs</p>
-                        <p className='endp'>Add Blog</p>
+                        <Link>Search Blogs</Link>
+                        <Link className='endp'>Add Blog</Link>
                     </div>
 
                     <div className='HD_footer-div'>
                         <h4>Internship</h4>
-                        <div className='p-div'>
-                        <p>Registeration</p>
-                        <p className='endp'>Search</p>
-                        </div>
+                        
+                        <Link>Registeration</Link>
+                        <Link className='endp'>Search</Link>
+                       
                     </div>
 
                     
                     <div className='HD_footer-div'>
-                        <h4 className='keep'>Keep in Touch</h4>
-                        <a href=''>
-                        <p className='pkeep'>focal-x@focalapp.com</p>
-                        </a>
-                        <a href=''>
+                        <h4 >Keep in Touch</h4>
+                        <p>focal-x@focalapp.com</p>
                         <p className='endp'> +963 994 975 318</p>
-                        </a>
+                    
                     </div>
 
 
@@ -50,7 +48,7 @@ export default function Footer() {
             <div className='HD_footer-below'>
                 <div className='HD_footer-text'>
                     <p>
-                    © 2021 - 2022 focal X a gency All Right Reserved
+                    © 2021 - 2022 focal X agency All Right Reserved
                     </p>
                 </div>
                 <hr className='line'></hr>

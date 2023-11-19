@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row } from "react-bootstrap";
 import { MdOutlineKeyboardDoubleArrowLeft } from 'react-icons/md'
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
+import { Link } from "react-router-dom";
 
 export const Form = () => {
 
@@ -95,7 +96,7 @@ export const Form = () => {
                                     onClick={() => { setPage((numPage) => numPage + 1)  }} >Next <MdOutlineKeyboardDoubleArrowRight /> </button>
 
                                 <button className="Ah_formEndNext" style={{ display: page === 0 ? "none" : page === 1 ? "none" : page === 2 ? "none" : "" }} 
-                                    onClick={formSupmet}>Accept <MdOutlineKeyboardDoubleArrowRight /> </button>
+                                    onClick={formSupmet}><Link className="Ah_formEndNext" to="/jopseekerprofile">Accept</Link> <MdOutlineKeyboardDoubleArrowRight /> </button>
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,8 @@ import { useState } from 'react';
 import './FormLoginStyle.css'
 import { RiEyeLine } from "react-icons/ri";
 import google from './../../../assets/google.png' ;
+import { Link } from 'react-router-dom';
+
 
 
 export default function FormLogin() {
@@ -16,11 +18,27 @@ export default function FormLogin() {
             data[index][event.target.name] = event.target.value;
             setInputFields(data);
             }
+       
     
 
         const submit = (e) => {
             e.preventDefault();
             console.log(inputFields)
+        }
+        const[pass , setPass] = useState(false)
+        const[password , setPasword] = useState("password")
+        const passw = () => {
+           
+            if(pass === true){
+                setPasword("text")
+                
+                setPass(false)
+            }
+            if(pass === false){ 
+             setPasword("password")  
+             setPass(true)
+             }
+
         }
 
 
@@ -48,7 +66,7 @@ export default function FormLogin() {
                     
                     <div className='inputBox'>
                         <input
-                        type='password' 
+                        type={password} 
                         name='password'
                         required placeholder='Enter your password'
                         value={input.password}
@@ -64,16 +82,16 @@ export default function FormLogin() {
 )
 
 })}   
-                        <span className='icon'><RiEyeLine/></span>
+                        <span className='icon' onClick={passw}><RiEyeLine/></span>
                         <label></label>
                     </div>
                     <div className='HD_forget'> 
-                        <label><a href=''>forget password?</a></label>
+                        <label><Link >forget password?</Link></label>
                     </div>
                     <div className='btns'>
-                    <button onClick={submit} className='btnlogin'> <p>Login</p></button>
+                    <button onClick={submit} className='btnlogin'> Login</button>
                     <button className='btnGoogle'>
-                        <img src={google} className='imgGoogle'/>
+                        <img src={google} alt='' className='imgGoogle'/>
                         <p>Continue with Google</p>
                     </button>
 

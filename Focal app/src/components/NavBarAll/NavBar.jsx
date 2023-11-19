@@ -5,6 +5,7 @@ import logo from "../../assets/Layer 2.svg";
 import DropDown from "../DropDown/DropDown";
 import ButtonLanguge from "../ButtonLanguge/ButtonLanguge";
 import ButtonLogin from "../ButtonLogin/ButtonLogin";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -16,10 +17,14 @@ const NavBar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="rn-nav">
           <DropDown
-            name="Home"
+           name="Home"
             option1="What is focal App"
+             to1="/"
             option2="Who We are?"
+             to2="/"
             option3="Lat's Talk"
+            to3="/"
+            
           />
           <DropDown
             name="Jobs"
@@ -41,7 +46,7 @@ const NavBar = () => {
           />
           <DropDown name="Internship" />
           <DropDown name="Ads" />
-          <Nav.Link href="/">Hir Us</Nav.Link>
+          <NavLink className="RA-HER" >Hir Us</NavLink>
         </Nav>
         <ButtonLogin />
         <ButtonLanguge />

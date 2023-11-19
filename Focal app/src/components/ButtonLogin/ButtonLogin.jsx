@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const ButtonLogin = () => {
   return (
     <div className="rn-group-login">
-      <Link className="rn-btn-login">Login</Link>
-      <Link>Register</Link>
+      <Link to="/login" className="rn-btn-login">Login</Link>
+      <Link to= "/register">Register</Link>
     </div>
   );
 };

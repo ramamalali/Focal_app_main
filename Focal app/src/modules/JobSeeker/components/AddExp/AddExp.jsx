@@ -3,24 +3,19 @@ import React, { useState } from 'react'
 const AddExp = ({ onSubmit }) => {
     const [name1, setName1] = useState('');
     const [name2, setName2] = useState('');
-    const [inputdata,setInputdata] = useState('');
-
-    const dates=((new Date().getFullYear())) 
-    const [startDate, setStartDate] = useState(dates);
+    const [startDate, setStartDate] = useState();
+    const [endDate, setEndDate] = useState();
 
     const handleSubmit = () => {
-      onSubmit(name1, name2,startDate,inputdata);
-      setName1('');
-      setName2('');
-      setInputdata('');
-      setStartDate('')
+      onSubmit(name1, name2, startDate , endDate);
+    setName1('');
+    setName2('');
+    setStartDate('')
+    setEndDate('')
       
     };
-    const datachange= (e)=>{
-      setInputdata(e.target.value)
     
-    }
-    console.log(inputdata)
+   
     return (
       <div className='KO-Add-Items'>
         <input
@@ -41,8 +36,15 @@ const AddExp = ({ onSubmit }) => {
         className='br-value3'
           type="date"
           placeholder="Enter DataTime"
-          value={inputdata}
-          onChange={datachange}
+          value={startDate}
+          onChange={(e) => setStartDate(e.target.value)}
+        />
+        <input
+        className='br-value3'
+          type="date"
+          placeholder="Enter DataTime"
+          value={endDate}
+          onChange={(e) => setEndDate(e.target.value)}
         />
 
         <button onClick={handleSubmit} className='KO-main-button2'>+</button>

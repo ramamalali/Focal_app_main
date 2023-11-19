@@ -6,6 +6,7 @@ import DropDown from "../DropDown/DropDown";
 import ButtonLanguge from "../ButtonLanguge/ButtonLanguge";
 import ButtonNotifcation from "../ButtonNotifcation/ButtonNotifcation";
 import icon from "../ButtonNotifcation/img/User-60.svg";
+import { Link, NavLink } from "react-router-dom";
 
 const NavJobSeekerLogin = () => {
   return (
@@ -16,11 +17,14 @@ const NavJobSeekerLogin = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="rn-nav">
-          <DropDown
+        <DropDown
             name="Home"
             option1="What is focal App"
+            to1="/"
             option2="Who We are?"
+            to2="/"
             option3="Lat's Talk"
+            to3="/"
           />
           <DropDown
             name="Jobs"
@@ -34,7 +38,7 @@ const NavJobSeekerLogin = () => {
             option2="Search Services"
             option3="Add Project"
           />
-          <DropDown
+           <DropDown
             name="Blog"
             option1="Search Blog"
             option2="Add Blog"
@@ -42,7 +46,7 @@ const NavJobSeekerLogin = () => {
           />
           <DropDown name="Internship" />
           <DropDown name="Ads" />
-          <Nav.Link href="/">Hir Us</Nav.Link>
+          <NavLink >Hir Us</NavLink>
         </Nav>
         <ButtonNotifcation icon={icon} />
         <ButtonLanguge />

@@ -30,19 +30,23 @@ const [filter, setfilter] = useState(data2)
  const aya =data2.filter(data =>  data.status.toLowerCase().includes(value.toLowerCase()) ) 
  setfilter(aya)
  }
+ const handenofocas = () => {
+  
+ setfilter(data2)
+ }
 
   return (
    <>
    <div className='ay-parent-search'>
    <input placeholder='Search to view more' type='text' className="ay-search"
-    onChange={(e) => setfilterinput(e.target.value)}/>
+    onChange={(e) => setfilterinput(e.target.value)} onFocus={handenofocas}/>
 
    <img src={vector} alt="" onClick={handelchange} />
    </div>
 
    <div className='draft'>
-    <button className='button-draft' onClick={handelaya}>Posted Blogs</button>
-    <button className='button-draft' onClick={handelali }>Draft</button>
+    <button className='button-draft' onFocus={handelaya} >Posted Blogs</button>
+    <button className='button-draft' onFocus={handelali }>Draft</button>
    </div>
 
    <div className="ay-componant-card">

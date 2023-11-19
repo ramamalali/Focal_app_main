@@ -6,7 +6,7 @@ import "./ButtonNotifcation.css";
 const ButtonNotifcation = ({ icon }) => {
   return (
     <div className="rn-grop-icon">
-      <Link className="rn-icon-1" to="/">
+      <Link className="rn-icon-1" to="/jopseekerprofile">
         <img src={icon} alt="tr" />
       </Link>
 

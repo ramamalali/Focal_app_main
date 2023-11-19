@@ -3,7 +3,7 @@ import React from "react";
 import { faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Skill = ({ id, name1, name2, onEdit, onDelete,inputdata, startDate }) => {
+const Skill = ({ id, name1, name2, onEdit, onDelete,endDate, startDate }) => {
     const handleEditClick = () => {
       onEdit(id);
     };
@@ -11,8 +11,7 @@ const Skill = ({ id, name1, name2, onEdit, onDelete,inputdata, startDate }) => {
     const handleDeleteClick = () => {
       onDelete(id);
     };
-    console.log(inputdata)
-    console.log(startDate)
+
     return (
     <div className="KO-card-item">
     <div className="KO-main-text">
@@ -24,7 +23,7 @@ const Skill = ({ id, name1, name2, onEdit, onDelete,inputdata, startDate }) => {
       <FontAwesomeIcon icon={faPenToSquare} className="KO-Update" onClick={handleEditClick}/>
       <FontAwesomeIcon icon={faTrash} className="KO-Delete" onClick={handleDeleteClick}/>
         </div>
-        <p className="KO-date">{startDate} To {inputdata}</p>
+        <p className="KO-date">{startDate} To {endDate}</p>
     </div>
   </div>
     );
