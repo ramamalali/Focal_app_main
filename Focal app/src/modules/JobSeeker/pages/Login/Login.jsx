@@ -1,12 +1,13 @@
 import React from 'react'
 import { Form } from '../../components/Form/Form';
-import NavBar from '../../../../components/NavBarAll/NavBar';
+
+import AllNav from '../../../../components/NavBarAll/AllNav';
 
 
 function Login() {
     return (
         <>
-        <NavBar />
+        <AllNav />
         <div className="Ah_formBody">
             <Form />
         </div>

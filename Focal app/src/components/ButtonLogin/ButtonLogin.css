@@ -1,5 +1,8 @@
 .rn-group-login {
     margin: 0.88rem auto 0.62rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .rn-group-login a {
@@ -16,15 +19,20 @@
 
 .rn-group-login .rn-btn-login {
     font-weight: 700;
-    margin-right: 2rem;
 }
 
 
 
 
-@media screen and (max-width:1130px) {
-    .rn-group-login .rn-btn-login {
-        margin-right: 1rem;
-    }
 
+@media screen and (max-width:900px) {
+    .rn-group-login {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
 }

@@ -5,7 +5,7 @@ import NavJobCompanyLogin from './NavJobCompanyLogin'
 import { useLocation, useParams } from 'react-router'
 
 export default function AllNav() {
-    const[navState , SetNavState] = useState(1)
+    const[navState , SetNavState] = useState(2)
     
     const[compo , setcompo] = useState(false )
     const[compo2 , setcompo2] = useState(false )

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import icon2 from "./img/Mask group.svg";
 import "./ButtonNotifcation.css";
 
-const ButtonNotifcation = ({ icon }) => {
+const ButtonNotifcation = ({ icon , pofile }) => {
   return (
     <div className="rn-grop-icon">
-      <Link className="rn-icon-1" to="/jopseekerprofile">
+      <Link className="rn-icon-1" to={pofile}>
         <img src={icon} alt="tr" />
       </Link>
 

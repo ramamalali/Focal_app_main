@@ -44,6 +44,9 @@
     margin-left: 12rem;
 
 }
+.rn-nav .RA-HER{
+    margin-left: 1rem !important;
+}
 
 
 @media screen and (max-width:1270px) {
@@ -55,7 +58,7 @@
 }
 
 .rn-nav a {
-    padding: 0.25rem 0 0.25rem 3px!important;
+    padding: 0.3rem 0 0.25rem 3px!important;
     margin: 0 !important;
     color: #938C8C;
     font-family: var(--font-famil) !important;
@@ -64,7 +67,7 @@
     line-height: normal;
 }
 .rn-nav .RA-HER {
-    padding: 0.25rem 0 0.25rem 3px!important;
+    padding: 0.3rem 0 0.25rem 3px!important;
     margin: 0 !important;
     color: #938C8C;
     font-family: Montserrat;
@@ -90,8 +93,19 @@
         text-align: center;
     }
     .rn-navbar {
-        padding-right: 1.5rem;
+        padding-right: 0
        
+    }
+    .navbar-toggler {
+        margin-right: 1.5rem
+    }
+
+    .rn-nav ul {
+        padding-left: 0;
+    }
+    .rn-nav .RA-HER{
+        margin-top: 1rem !important;
+        padding: 0 !important;
     }
 
 }
