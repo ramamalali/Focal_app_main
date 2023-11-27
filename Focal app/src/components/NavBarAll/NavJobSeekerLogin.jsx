@@ -46,7 +46,7 @@ const NavJobSeekerLogin = () => {
           />
           <DropDown name="Internship" />
           <DropDown name="Ads" />
-          <NavLink >Hir Us</NavLink>
+          <NavLink className="RA-HER" >Hir Us</NavLink>
         </Nav>
         <ButtonNotifcation icon={icon} pofile={"/jopseekerprofile/information"}/>
         <ButtonLanguge />

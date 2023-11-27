@@ -14,17 +14,13 @@ const Sidebar = () => {
  
     setFile(URL.createObjectURL(e.target.files[0]));
 }
-  /* const [tgg, settgg] = useState(!show); */
+  
 
   return (
     <>
       
          <div className='br-Sidebarss'>
-     
-        {/* ---------------------icon bars-------------------- */}
-        
-       
-
+    
          {/* ------------------------------------------- */}
         
         <div className="br-Asmain">
@@ -63,7 +59,7 @@ const Sidebar = () => {
           isPending ? "pending" : isActive ? "active" : ""
           }
          >
-        RESUMS
+        RESUMS   <span className="br-AsPresent"> 0%</span>
         </NavLink> 
         {/* <a  id="br-Aslink10"
            to="/messages" 
@@ -80,8 +76,8 @@ const Sidebar = () => {
           <div className='br-Aslink1'>
             <NavLink to ="/jopseekerprofile/blog" className={({ isActive, isPending }) =>
           isPending ? "pending" : isActive ? "active" : ""
-          }>BLOGS  </NavLink>
-            {/* <a className='br-Aslink11'>BLOGS  </a> */}
+          }>BLOGS   </NavLink>
+         
           </div>
         </div>
         <hr className='br-Ashorizontal2 w-100' />

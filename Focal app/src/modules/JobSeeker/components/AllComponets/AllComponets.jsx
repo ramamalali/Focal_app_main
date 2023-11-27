@@ -29,6 +29,13 @@ const AllComponets = () => {
    <Col lg={6} md={12} className="mb-3"> <SkillsList/>  </Col>
    <Col  lg={6} md={12} className="mb-3"> <LanguagesList/> </Col>
 </Row>
+<Row>
+<div className="rn-div-btn">
+        <button className="rn-save-data">
+          Save Information
+        </button>
+      </div>
+</Row>
        </div>
         </>   
   )

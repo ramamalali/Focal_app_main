@@ -27,10 +27,10 @@ const MainProfile1 = () => {
          
           </Col>
     </Row>
-   <Footer />
+ 
    
  </div>
-
+ <Footer />
  </>
   )
 }

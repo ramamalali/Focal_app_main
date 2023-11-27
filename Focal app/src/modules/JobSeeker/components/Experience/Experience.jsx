@@ -13,7 +13,7 @@ const Experience = () => {
   const [editedExperience, setEditedExperience] = useState();
   const [text,setText]=useState("Add More Experience to increase your chance of getting a job");
   function changtext(){
-setText("loremmmmmmmmmm ")
+setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ")
   }
   const handleEdit = (id) => {
     setSelectedExperience(id);

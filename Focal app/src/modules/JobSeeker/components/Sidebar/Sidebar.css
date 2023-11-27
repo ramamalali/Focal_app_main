@@ -8,7 +8,6 @@
 .side-bottom {
    text-align: left;
    margin-left: 2rem;
-
 }
 
 .lable-img{
@@ -50,18 +49,11 @@
       position: fixed;
       top: 3.05rem;
       left: 0;
-
-
-
-
-
    }
 
    .br-Sidebarss .br-AsLinkss,
    .side-bottom {
-
       text-align: center;
-
    }
 
    .br-show {
@@ -95,6 +87,17 @@
    left: 3%;
 }
 
+/* adding */
+.br-AsPresent{
+   color: var( #71AA27);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 28px;
+   font-size: 14px;
+   padding: 5px;
+   text-transform: uppercase; 
+}
 
 
 .br-Sidebarss .br-Aspargr {
@@ -105,11 +108,11 @@
 
 .br-Asname .br-Astitle {
    color: var(--focal-x-font-color, #282828);
-   font-family: Montserrat;
    font-size: 1.5rem;
    font-style: normal;
    font-weight: 700;
    line-height: normal;
+   padding-top: 10px;
 }
 
 .br-Asname .br-Asbtn1 {

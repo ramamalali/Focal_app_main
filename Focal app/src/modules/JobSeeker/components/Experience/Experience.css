@@ -5,15 +5,6 @@
       padding: 1.12rem 2rem;
      
 }
-/* .container{
-    padding-right: 11%;
-} */
- /*   @media (max-width:1285px){
-    .KO-main-contener{
-           max-width:35rem !important;
-       }
-   } */
-
    .KO-skills{
        display: flex;
        align-items: center;
@@ -41,11 +32,14 @@
     
 }
 .KO-main-pargrth{
-    color: var(--focal-x-font-color, #282828);
-    font-size: 1rem;
+    font-family: Montserrat;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem; 
+    line-height: 1.5rem; /* 150% */
+    /* margin-top: 0.7rem; */
+    color: var(--focal-x-disable, #938c8c);
+    margin-bottom: 0 !important;
 }
 .KO-value1{
     border: none;
@@ -101,6 +95,7 @@ line-height: 1.5rem;
         display: flex;
     justify-content: flex-end;
     gap: 10px;
+    margin-bottom: 10px;
     }
     .KO-date{
         font-size: 14px;

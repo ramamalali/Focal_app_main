@@ -118,7 +118,22 @@
         border: 100 solid wheat;
     }
     .HD_footer-text p{
+        font-size: 12px;
+    }
+    .HD_footer-div a{
         font-size: 14px;
+    }
+    .HD_footer-div p{
+        font-size: 14px;
+    }
+    .HD_footer-div h4{
+        color: #FFFFFF;
+        font-size: 20px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        word-wrap: break-word;
+        position: relative;
+        bottom: 10px;
     }
     .HD_footer-below{
       

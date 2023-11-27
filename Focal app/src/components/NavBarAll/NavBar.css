@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     padding: 0;
-    position: sticky;
+    position: fixed;
     gap: 2rem;
     top:0;
     z-index: 8;
@@ -96,6 +96,10 @@
         padding-right: 0
        
     }
+    .rn-navbar a {
+        font-size: 0.7rem;
+       
+    }
     .navbar-toggler {
         margin-right: 1.5rem
     }
@@ -106,6 +110,18 @@
     .rn-nav .RA-HER{
         margin-top: 1rem !important;
         padding: 0 !important;
+        font-size: 1rem !important;
+    }
+    .rn-button-dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .rn-navbar .dropdown-menu[data-bs-popper] {
+     
+      width: 30%;
     }
 
 }

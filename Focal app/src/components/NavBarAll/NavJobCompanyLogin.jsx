@@ -29,8 +29,9 @@ const NavJobCompanyLogin = () => {
           <DropDown
             name="Jobs"
             option1="Manage Jobs"
-            option2="Interviews"
-            option3="Search Employees"
+            option2="Add Job"
+            option3="Search Employee"
+            option4="Wallet"
           />
           <DropDown
             name="Freelance"
@@ -46,7 +47,7 @@ const NavJobCompanyLogin = () => {
           />
           <DropDown name="Internship" />
           <DropDown name="Ads" />
-          <NavLink >Hir Us</NavLink>
+          <NavLink className="RA-HER" >Hir Us</NavLink>
         </Nav>
         <ButtonNotifcation icon={icon} />
         <ButtonLanguge />

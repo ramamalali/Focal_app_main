@@ -14,6 +14,10 @@ const LanguagesList = () => {
   const [selectedSkillId, setSelectedSkillId] = useState();
   const [showAddInfo, setShowAddInfo] = useState(false);
   const [editedSkill, setEditedSkill] = useState();
+  const [text,setText]=useState("Add More Languages");
+  function changtext(){
+  setText(" ")
+  }
   const handleEdit = (id) => {
     setSelectedSkillId(id);
     const skill = skills.find((skill) => skill.id === id);
@@ -44,6 +48,7 @@ const LanguagesList = () => {
     };
     setSkills([...skills, newSkill]);
     setShowAddInfo(false);
+    changtext()
   };
   return (
     <div className='KO-skillslist'>
@@ -54,6 +59,7 @@ const LanguagesList = () => {
         <button onClick={() => setShowAddInfo(true)} className='KO-main-button2'>+</button>
       )}
       </div>
+      <p className='KO-main-pargrth'>{text}</p>
       {skills.map((skill) => (
         <Language
           key={skill.id}

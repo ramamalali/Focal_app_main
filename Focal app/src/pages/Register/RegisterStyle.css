@@ -13,6 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
 /* style all paragraphs */
@@ -117,6 +118,9 @@
     
 }
 @media screen and (max-width: 700px) {
+    .HD_section-JobLogin{
+        margin-top: 2rem;
+    }
 
     .HD_section-JobLogin{
         overflow: hidden;

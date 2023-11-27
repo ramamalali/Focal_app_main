@@ -9,6 +9,10 @@
 }
 .br-As-col2{
    padding-left: 4rem;
+  
+}
+.br-As-Row{
+   margin-top: 4rem;
 }
 @media(min-width:1024px){
    .br-As-Row{
